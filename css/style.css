@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;700&display=swap');
+
 @font-face {
     font-family: 'MICEGothic';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-01@1.0/MICEGothic.woff2') format('woff2');
@@ -483,7 +483,7 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     margin:0 auto;
     padding: 40px 0 0;
 }
-.form-top-title {font-size: 16px; font-weight: 600; background: url('../img/arrow.jpg')no-repeat left center; background-size: 16px; text-indent: 20px; margin-bottom: 10px;}
+.form-top-title {font-size: 16px; font-weight: 600;  background-size: 16px; text-indent: 20px; margin-bottom: 10px;}
 .form-box:after {clear:both;}
 .form-title {
 	display:block; position:relative; float:left;

@@ -1,5 +1,6 @@
 $(function() {
     var targetDate = new Date();
+
     targetDate.setDate(targetDate.getDate() + 1);
     targetDate.setHours(0, 0, 0, 0);
     
@@ -20,8 +21,9 @@ $(function() {
       var seconds = Math.floor((distance % (1000 * 60)) / 1000).toString().padStart(2, "0");
     
       // Output the result in an element with id="countdown"
+      
       document.getElementById("countdown").innerHTML = hours + "시 " + minutes + "분 " + seconds + "초 남음 ";
-    
+      
       // If the countdown is finished, start a new countdown for the next midnight
       if (distance < 0) {
         clearInterval(x);
@@ -29,9 +31,12 @@ $(function() {
         countDownDate = targetDate.getTime();
         x = setInterval(arguments.callee, 1000);
       }
+
+    
     }, 1000);
-    
-    
+
+
+
                 function upslide() {
                     var h = $('#ticker').find('tbody > tr').outerHeight(); 
                     
