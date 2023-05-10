@@ -85,7 +85,7 @@
     <header>
         <nav class="top">
             <a class="logo"  target="_self" >
-                <img src="img/favicon.png" style="width:100%;min-width:20px;margin-right:4px;margin-bottom:4px;cursor:pointer" onclick="window.location.href='./index.html'"><p class="logo-font" style="margin:0px;cursor:pointer" onclick="window.location.href='./index.html'">국가자격증 취득지원</p>
+                <img src="img/favicon.png" style="width:100%;min-width:20px;margin-right:4px;margin-bottom:4px;cursor:pointer" onclick="window.location.href='./index.html'"><p class="logo-font" style="margin:0px;cursor:pointer" onclick="window.location.href='./index.html'">한국교육개발센터</p>
               <!-- <img alt="" src="img/logo_img.png" > -->
             
             </a>
@@ -433,13 +433,25 @@
                             <table class="form-box-tb">
                                 <tbody>
                                     <tr>
-                                        <th><!--<i class="fa fa-user" aria-hidden="true"></i>-->자격증<br>(복수선택가능)</th>
+                                        <th><!--<i class="fa fa-user" aria-hidden="true"></i>-->자격증<br></th>
                                         <td>
-                                            <input type='checkbox' name='lic' class="chk_lic" id='license1'  value="손해평가사" style="display:none;"> <label for="license1"> 손해평가사 </label>
+
+                                            <select name='entry.302176945' id='license' class="form-control" placeholder="현재 조건">
+
+                                                <option value="자격증 선택" selected disabled>자격증 선택
+                                                    <option value="손해평가사">손해평가사</option>
+                                                    <option value="도로교통사고감정사">도로교통사고감정사</option>
+                                                    <option value="농산물품질관리사">농산물품질관리사</option>
+                                                    <option value="반려견스타일리스트">반려견스타일리스트</option>
+                                                  
+                                            </select>
+
+                                            <!--한번에 여러개 신청하는 기능-->
+                                            <!-- <input type='checkbox' name='lic' class="chk_lic" id='license1'  value="손해평가사" style="display:none;"> <label for="license1"> 손해평가사 </label>
                                             <input type='checkbox' name='lic' class="chk_lic" id='license2'  value="도로교통사고감정사" style="display:none;"> <label for="license2" > 도로교통사고감정사</label>
                                             <input type='checkbox' name='lic' class="chk_lic" id='license3'  value="농산물품질관리사" style="display:none;"> <label for="license3" > 농산물품질관리사</label>
                                             <input type='checkbox' name='lic' class="chk_lic" id='license4'  value="반려견스타일리스트" style="display:none;"> <label for="license4" > 반려견스타일리스트</label>
-                                            <!-- <input type='checkbox' name='lic' class="chk_lic" id='license5'  value="화장품조제관리사" style="display:none;"> <label for="license5"> 화장품조제관리사</label> -->
+                                            <input type='checkbox' name='lic' class="chk_lic" id='license5'  value="화장품조제관리사" style="display:none;"> <label for="license5"> 화장품조제관리사</label>
                                             <input type="text" name='entry.302176945' id="selected_licenses" readonly style="display:none;">
                                             <script>
                                             const checkboxes = document.querySelectorAll('.chk_lic');
@@ -455,7 +467,8 @@
                                                     });
                                                     selectedLicenses.value = selectedValues.join(', ');
                                                   });
-                                                });</script>
+                                                });</script> -->
+                                                <!--한번에 여러개 신청하는 기능 끝-->
                                         </td>
                                     </tr>
                                 <tr>
@@ -1131,7 +1144,7 @@
      <!-- jQuery library -->
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <!-- Popper JS -->
-     <script src="js/validation-complex.js"></script>
+     <script src="js/validation.js"></script>
      <script src="js/personal.js"></script>
     <script src="js/main.js" charset="euc-kr"></script>
     <script src="./js/count.js" ></script>
