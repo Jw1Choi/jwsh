@@ -88,6 +88,14 @@ header .ham-con .container-box > .top.on .logo {display: none;}
 header .ham-con .container-box .wrap .menu03 {overflow-y: scroll;}
 /* header .ham-con .container-box .wrap .menu03{ -ms-overflow-style: none; } header .ham-con .container-box .wrap .menu03::-webkit-scrollbar{ display:none; } */
 
+#logo_img{
+    width:100%;min-width:20px !important;margin-right:4px;margin-bottom:4px;cursor:pointer;
+}
+
+#lgt{
+    margin:0px;cursor:pointer;
+}
+
 header .ham-con .menu .middle {}
 header .ham-con .menu .middle ul {}
 header .ham-con .menu .middle ul li { padding: 10px 25px 10px 25px; display: flex; align-items: center; justify-content: space-between; cursor: pointer;}
