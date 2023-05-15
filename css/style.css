@@ -234,8 +234,8 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
   content: none;
 }
 .btn-main {
-    background: linear-gradient(to bottom, #F09819, #FF512F);
-    box-shadow: rgb(0,0,0,.1) 10px 10px;
+    background: #3685d2;
+    box-shadow: rgb(0,0,0,.1) 5px 5px;
     color: #fff;
     position: relative;
     top: 40px;
@@ -243,6 +243,14 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     border-radius: 50px;
     font-size: 18px;
     font-weight: 400;
+    transition:1s;
+}
+
+.btn-main:hover {
+    color:#3685d2;
+    background-color: #fff;
+    border:1px solid #3685d2;
+    box-shadow: rgb(0,0,0,.1) 0px 0px;
 }
 
 .menu_ex{
