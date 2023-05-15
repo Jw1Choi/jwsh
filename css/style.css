@@ -121,6 +121,25 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     position: relative;
     bottom: 3px;
 }
+
+.contents .menu_list{
+    position: relative;
+    display:inline-block;
+    padding:15px 10px;
+    font-size:1rem;
+    margin:3px;
+    border:1px solid #3684d2;
+    border-radius:10px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.contents .menu_list:hover{
+    background-color: #3684d2;
+    color:#fff;
+    cursor: pointer;
+}
+
 .inner { 
     max-width: 700px;
     margin: 0 auto;
@@ -228,6 +247,10 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
 
 .menu_ex{
     padding-left:25px;
+}
+
+.underline{
+    text-underline-position : from-font;
 }
 
 .menu_event{
@@ -833,12 +856,16 @@ footer{
 
 
 /* 개인정보처리방침 CSS */
-.privacyBtn { cursor: pointer; color:#000;font-weight: 200; font-size: 13px; margin-top: -10px}
-.privacyBtn:hover {color:#284E80;font-weight: 300; font-size: 13px; margin-top: -10px}
+.privacyBtn .privacyBtn1 { cursor: pointer; color:#000;font-weight: 200; font-size: 13px; margin-top: -10px}
 
-#privacy {  position: fixed; width: 100%; height: 100%; left: 0; bottom: 0; z-index: 80; background-color: rgba(0, 0, 0, 0.6); visibility: hidden;     transform: translate(0, -50%);
+.privacyBtn:hover, .privacyBtn1:hover {color:#284E80;font-weight: 300; font-size: 13px; margin-top: -10px}
+
+#privacy, #privacy1 {  position: fixed; width: 100%; height: 100%; left: 0; bottom: 0; z-index: 80; background-color: rgba(0, 0, 0, 0.6); visibility: hidden;     transform: translate(0, -50%);
 }
-#privacy > #privacyContent { position: absolute; width: 60%; height: 500px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-left:20%;  top: 50%; margin-top: -250px;  }
+#privacy > #privacyContent{ position: absolute; width: 60%; height: 500px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-left:20%;  top: 50%; margin-top: -250px;  }
+#privacyContent > div { width: 100%; float: left; }
+
+#privacy1 > #privacyContent { position: absolute; width: 100%; height: 100vh; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); margin-left:0;  top: 50%; margin-top: -300px;  }
 #privacyContent > div { width: 100%; float: left; }
 
 #privacyContent > .titWrap { height: 45px; line-height: 45px; background-color: #F8F8F8; padding: 0 15px; color: #000; position: relative; display: flex; align-items: center; justify-content: space-between;}
@@ -856,7 +883,7 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-#privacy.blur {
+#privacy.blur, #privacy1.blur {
   top: 50%;
   visibility: visible;
   opacity: 1;
