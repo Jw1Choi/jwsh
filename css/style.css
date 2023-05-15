@@ -61,7 +61,7 @@ h6 {
 
 ul {
     margin: 0 0 15px 0;
-    /* padding-left: 15px; */
+    padding-left: 0px;
     list-style: none;
 }
 
@@ -226,8 +226,14 @@ button.active.focus, button.active:focus, button.focus, button:active.focus, but
     font-weight: 400;
 }
 
+.menu_ex{
+    padding-left:25px;
+}
 
-
+.menu_event{
+    padding-left:20px;
+    color: #1565C0;
+}
 
 .btn-main:after {
     content: '';
@@ -907,6 +913,11 @@ display: none;
     color:#3685d2;
 }
 
+.next_point{
+   width:20px;
+   height:20px; 
+   margin-bottom:15px;
+}
 @media screen and (min-width:600px) {
     #menu .menu_list{
         min-width:120px;
